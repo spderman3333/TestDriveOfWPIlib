@@ -15,7 +15,6 @@ import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
-import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.button.CommandPS4Controller;
 import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine.Direction;
 
@@ -69,10 +68,12 @@ public class RobotContainer {
         // and Y is defined as to the left according to WPILib convention.
         drivetrain.setDefaultCommand(
                 // Drivetrain will execute this command periodically
-                drivetrain.applyRequest( //
-                        () -> drive.withVelocityX(joystick.getLeftY() * MaxSpeed) // Drive forward with negative Y
+                drivetrain.applyRequest( // The joistick directions assume Blue team aliance.
+                                         // TODO(vdikov): If the Red team is selected (from driver station), 
+                                         // the direction is inverted, which is not obviously the intended behavior.
+                        () -> drive.withVelocityX(-joystick.getLeftY() * MaxSpeed) // Drive forward with negative Y
                                                                                   // (forward)
-                                .withVelocityY(joystick.getLeftX() * MaxSpeed) // Drive left with negative X (left)
+                                .withVelocityY(-joystick.getLeftX() * MaxSpeed) // Drive left with negative X (left)
                                 .withRotationalRate(-joystick.getRightX() * MaxAngularRate) // Drive counterclockwise
                                                                                             // with
                                                                                             // negative X (left)
