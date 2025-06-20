@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 2.0,
-        "y": 7.0
+        "x": 3.0568647540983607,
+        "y": 2.2568135245901635
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.0,
-        "y": 7.0
+        "x": 3.2007172131147543,
+        "y": 1.7293545081967203
       },
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Coral"
     },
     {
       "anchor": {
-        "x": 4.0,
-        "y": 6.0
+        "x": 3.692213114754098,
+        "y": 1.7293545081967203
       },
       "prevControl": {
-        "x": 4.363524590163935,
-        "y": 6.788165983606557
+        "x": 3.092827868852459,
+        "y": 1.7293545081967203
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "algea-station"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -124.46869258552735
+    "rotation": 0.0
   },
   "reversed": false,
   "folder": null,
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": 92.00955381302107
   },
   "useDefaultConstraints": true
 }

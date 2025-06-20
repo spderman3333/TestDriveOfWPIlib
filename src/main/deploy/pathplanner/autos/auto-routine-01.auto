@@ -7,7 +7,13 @@
         {
           "type": "path",
           "data": {
-            "pathName": "path-2"
+            "pathName": "start-to-coral"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "coral-to-algae-station"
           }
         }
       ]

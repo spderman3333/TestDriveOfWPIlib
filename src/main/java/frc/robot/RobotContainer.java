@@ -54,7 +54,7 @@ public class RobotContainer {
         // Build an chooser from the PathPlanner auto commands, choose a default one
         // (must match an auto command from the PathPlanner UI by name), and link the
         // chooser to the smart dashboard of choice.
-        autoChooser = AutoBuilder.buildAutoChooser("FirstAutoPath");
+        autoChooser = AutoBuilder.buildAutoChooser("auto-routine-01");
         SmartDashboard.putData("Auto Routine", autoChooser);
 
         configureBindings();
