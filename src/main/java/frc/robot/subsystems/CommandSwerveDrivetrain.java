@@ -117,10 +117,8 @@ public class CommandSwerveDrivetrain extends TunerSwerveDrivetrain implements Su
      * Constructs a CTRE SwerveDrivetrain using the specified constants.
      * <p>
      * This constructs the underlying hardware devices, so users should not
-     * construct
-     * the devices themselves. If they need the devices, they can access them
-     * through
-     * getters in the classes.
+     * construct the devices themselves. If they need the devices, they can access
+     * them through getters in the classes.
      *
      * @param drivetrainConstants Drivetrain-wide constants for the swerve drive
      * @param modules             Constants for each specific module
@@ -169,8 +167,7 @@ public class CommandSwerveDrivetrain extends TunerSwerveDrivetrain implements Su
                             new PIDConstants(7, 0, 0)),
                     config,
                     // `shouldFlipPath`: Assume the path needs to be flipped for Red vs Blue, this
-                    // is normally the
-                    // case
+                    // is normally the case.
                     () -> DriverStation.getAlliance().orElse(Alliance.Blue) == Alliance.Red,
                     this // Subsystem for requirements
             );
@@ -184,10 +181,8 @@ public class CommandSwerveDrivetrain extends TunerSwerveDrivetrain implements Su
      * Constructs a CTRE SwerveDrivetrain using the specified constants.
      * <p>
      * This constructs the underlying hardware devices, so users should not
-     * construct
-     * the devices themselves. If they need the devices, they can access them
-     * through
-     * getters in the classes.
+     * construct the devices themselves. If they need the devices, they can access
+     * them through getters in the classes.
      *
      * @param drivetrainConstants     Drivetrain-wide constants for the swerve drive
      * @param odometryUpdateFrequency The frequency to run the odometry loop. If
@@ -209,10 +204,8 @@ public class CommandSwerveDrivetrain extends TunerSwerveDrivetrain implements Su
      * Constructs a CTRE SwerveDrivetrain using the specified constants.
      * <p>
      * This constructs the underlying hardware devices, so users should not
-     * construct
-     * the devices themselves. If they need the devices, they can access them
-     * through
-     * getters in the classes.
+     * construct the devices themselves. If they need the devices, they can access
+     * them through getters in the classes.
      *
      * @param drivetrainConstants       Drivetrain-wide constants for the swerve
      *                                  drive
@@ -319,8 +312,7 @@ public class CommandSwerveDrivetrain extends TunerSwerveDrivetrain implements Su
 
     /**
      * Adds a vision measurement to the Kalman Filter. This will correct the
-     * odometry pose estimate
-     * while still accounting for measurement noise.
+     * odometry pose estimate while still accounting for measurement noise.
      *
      * @param visionRobotPoseMeters The pose of the robot as measured by the vision
      *                              camera.
@@ -334,8 +326,7 @@ public class CommandSwerveDrivetrain extends TunerSwerveDrivetrain implements Su
 
     /**
      * Adds a vision measurement to the Kalman Filter. This will correct the
-     * odometry pose estimate
-     * while still accounting for measurement noise.
+     * odometry pose estimate while still accounting for measurement noise.
      * <p>
      * Note that the vision measurement standard deviations passed into this method
      * will continue to apply to future measurements until a subsequent call to
